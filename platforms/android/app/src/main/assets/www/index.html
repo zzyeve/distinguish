@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+<!--        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div class="app">
+            <h1>Apache Cordova</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+            <br><br>
+            <button onclick="test()">点击调用原生</button><br><br>
+        </div>
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+        <script >
+          function test(){
+              cordova.distinguishPlugin.coolMethod(
+                 {"type":4,
+                    "isPlate":true,"isVin":true,"isCapture":true,"isCreate":true,
+                    "plateNum":2,"confidence":0.7}
+                 ,function(msg){alert('原生返回了：'+msg);}
+                 ,function(e){alert(e);}
+              )
+          }
+        </script>
+    </body>
+</html>

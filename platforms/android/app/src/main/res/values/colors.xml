@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_app">#0E65E3</color>
+    <color name="white">#ffffff</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+
+    <color name="vin_back">#f1f5f6</color>
+    <color name="vin_text4">#cccccc</color>
+    <color name="vin_text1">#333333</color>
+    <color name="vin_blue">#009def</color>
+
+    <color name="scan_mask">#60000000</color>
+    <color name="scan_laser">#cc0000</color>
+    <color name="scan_dot">#ff6600</color>
+    <color name="scan_result_view">#b0000000</color>
+    <color name="scan_result_dots">#c099cc00</color>
+</resources>
